@@ -11,7 +11,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "standard | snazzy && tape test/*.js | faucet",
+    "test": "standard | snazzy && tape test/*.js | tap-spec",
     "rebuild": "node-gyp rebuild --verbose",
     "prebuild": "prebuild --all --strip",
     "install": "prebuild-install || node-gyp rebuild"
@@ -28,11 +28,11 @@
     "prebuild": "^6.2.0",
     "angle-normals": "^1.0.0",
     "bunny": "^1.0.1",
-    "faucet": "0.0.1",
     "gl-conformance": "^2.0.9",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
-    "tape": "^4.7.0"
+    "tape": "^4.7.0",
+    "tap-spec": "^4.1.1"
   },
   "repository": {
     "type": "git",
