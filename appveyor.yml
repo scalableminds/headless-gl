@@ -4,6 +4,9 @@ environment:
 platform:
   - x64
 
+cache:
+  - '%APPDATA%\npm-cache -> package.json'
+
 install:
   - cmd: git submodule update --init
   - ps: Install-Product node $env:nodejs_version $env:platform
